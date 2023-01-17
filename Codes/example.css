@@ -1,0 +1,193 @@
+/*Mobile view*/
+[class*="col-"]{
+	width: ;
+}
+/*desktop view*/
+@media only screen and (min-width: 768px){
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+@keyframes shadow {
+	10% { text-shadow: 0 0 .7em #ff0800; }
+	20% { text-shadow: 0 0 .7em #ff0074; }
+	30% { text-shadow: 0 0 .7em #ff00ea; }
+	40% { text-shadow: 0 0 .7em #ae00ff; }
+	50% { text-shadow: 0 0 .7em #3d00ff; }
+	60% { text-shadow: 0 0 .7em #00b7ff; }
+	50% { text-shadow: 0 0 .7em #00ff3c; }
+	80% { text-shadow: 0 0 .7em #c4ff00; }
+	50% { text-shadow: 0 0 .7em #ffd500; }
+	100% { text-shadow: 0 0 .7em #ff9500; }
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+header{ /* nav bar */
+	height: 100px;
+	z-index: 12;
+	position: fixed;
+}
+.banner{   /* car picture */
+	height: 450px;
+	position: fixed;
+	top: 75px;
+	background-image: url("Image1/ICT PBL BG.png");
+	background-size: cover;
+	background-position: center center;
+}
+.banner h3{ /* text in the car picture */
+	padding-left: 10px;
+	padding-top: 7%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 0 0 0.2em black;
+}
+.text-area{
+	position: relative;
+	top: 500px;
+	background: #fff;
+	height: 1500px;
+}
+.comment{
+	position: relative;
+	top: 500px;
+	background: #ddd;
+	height: 100px;
+}
+.comment h2{
+	font-size: 30px;
+	text-align: center;
+	padding-top: 30px;
+	text-transform: uppercase;
+	color: black;
+	letter-spacing: 2px;
+}
+
+
+
+
+
+.click{ /* nav bar texts */
+	text-decoration: none;
+	list-style: none;
+}
+label.logo{ /* nav bar MetalLords*/
+	color: black;
+	font-size: 20px;
+	line-height: 70px;
+	padding: 0 35px;
+	font-weight: bold;
+	text-shadow: 0 0 .7em transparent;
+}
+label.logo:hover{ /* nav bar MetalLords*/
+	animation-name: shadow;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+nav ul{ /* nav bar */
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{ /* nav bar */
+	display: inline-block;
+	line-height: 70px;
+	margin: 0 10px;
+}
+nav{ /* nav bar */
+	background: white;
+}
+.unactive a{ /* nav bar */
+	padding-bottom: 10px;
+	transition: all 0.5s ease;
+	border-bottom: 3px solid transparent;
+}
+.unactive a:hover{ /* nav bar */
+	padding-bottom: 1px;
+	border-bottom: 3px solid black;
+	text-shadow: 0 0 0.7em black;
+}
+.setting{
+	width: 20px;
+	height: 20px;
+}
+.click img{
+	width: 30px;
+	top: 20px;
+}
+.active a{
+	padding-bottom: 10px;
+	transition: all 0.5s ease;
+	border-bottom: 3px solid transparent;
+	text-shadow: 0 0 0.7em #00ffed;
+}
+.active a:hover{
+	padding-bottom: 1px;
+	border-bottom: 3px solid #00ffed;
+	text-shadow: 0 0 0.7em #00ffed;
+}
+li,a{ /* nav bar */
+	color: black;
+}
+nav label ul li{ /* nav bar */
+	position: fixed;
+}
+
+.block{
+	border-radius: 10px;
+	margin: 40px;
+	background: red;
+	width: 300px;
+	float: right;
+	z-index: 1;
+	transition: all 0.3s ease;
+}
+.block:hover .imglink img{
+	border-radius: 40px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: black;
+}
+.block:hover{
+	border-radius: 40px;
+	background: black;
+}
+.block:hover .imglink h3{
+	font-size: 20px;
+	color: white;
+}
+.imglink img{
+	top: 100;
+	width: 300px;
+	float: right;
+	z-index: 1;
+	background: red;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transition: all 0.3s ease;
+}
+.imglink h3{
+	padding: 7px;
+	margin-top: -5;
+	float: right;
+	width: 300px;
+	text-align: center;
+	background: transparent;
+	transition: all 0.3s ease;
+}
